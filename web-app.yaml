@@ -8,14 +8,14 @@ spec:
   template:
     metadata:
       labels:
-        role: web-app
+        app: web-app
     spec:
       containers:
       - name: web-app
         image: "stackexpresskush/web-test:latest"
         imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - containerPort: 5000
         resources:
           requests:
             cpu: 50m
