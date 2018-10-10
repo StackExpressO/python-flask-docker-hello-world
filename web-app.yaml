@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: web-app
-        image: "stackexpresskush/web-test:latest"
+        image: "stackexpresskush/web-test:${BUILD_NUMBER}"
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
